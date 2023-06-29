@@ -20,7 +20,7 @@ jobs:
       uses: sonarsource/sonarqube-scan-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SCAN_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SCAN_HOST }}
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         projectBaseDir: "DVSA/*"
       with:
         # Additional arguments for the sonarcloud scanner
